@@ -6,6 +6,8 @@ Custom themes for **official DeepSeek Harness Desktop**, with **Big Fat Fish The
 
 [中文](#中文) · [English](#english) · [Changelog](CHANGELOG.md) · [Artwork notice](ASSET_NOTICE.md)
 
+[下载 Windows 安装包 / Download Windows installer](https://github.com/RagnarokChan/dsh-custom-theme/releases/download/v2.0.0/dsh-custom-theme-2.0.0-windows.zip) · [版本说明 / Release notes](https://github.com/RagnarokChan/dsh-custom-theme/releases/tag/v2.0.0)
+
 ![独立主题设置 / Independent theme settings](docs/theme-settings.png)
 
 ## 中文

@@ -1,0 +1,15 @@
+{
+  "format": 1,
+  "qualifiedPlugin": "2.0.0",
+  "qualificationDate": "2026-10-01",
+  "automatedTests": 31,
+  "liveChecks": ["official-installer", "independent-settings", "custom-palette", "theme-json-import", "export-fallback", "original-rollback", "restart-persistence", "wide-and-narrow-frames", "scrollbar-clearance", "history-and-original-artwork-integrity"],
+  "qualifiedDesktop": "0.2.0-rc.2",
+  "qualifiedBuildCommit": "04f392c9ddd144fa426da2045178797da6db6c11",
+  "requiredServices": ["theme.overrideTokens", "theme.getTheme", "slots.inject", "slots.register", "configForms.get"],
+  "ownedSettingsNamespace": "whale-girl-theme",
+  "originalSettingsUntouched": ["ui-theme.preference", "ui-theme.fontSize"],
+  "adapter": "dsh-0.2-semantic",
+  "upgradePolicy": "Missing services keep the plugin pending; unknown DOM surfaces retain their original geometry and omit only their decoration. Requalify new desktop versions with the live browser verifier.",
+  "assetOwnership": "User-provided original assets, copied byte-for-byte from the former shell; no public redistribution license is implied."
+}

@@ -1,0 +1,21 @@
+# Dependencies and machine-local state must never enter the repository.
+node_modules/
+.dsh/
+.env
+.env.*
+!.env.example
+sessions/
+storages/
+profiles/
+archives/
+work/
+outputs/
+release/
+personal-backgrounds/
+*.log
+*.tgz
+*.zip
+.DS_Store
+Thumbs.db
+
+# lib/ is intentionally committed: official DSH installs prebuilt client code.

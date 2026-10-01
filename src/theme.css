@@ -1,0 +1,37 @@
+/* Native geometry and theme preferences remain owned by DSH. All selectors are opt-in. */
+body[data-whale-girl-theme] { --wg-surface:#0d1c3b; --wg-rim:rgba(188,213,255,.8); }
+body[data-whale-girl-theme]:not([data-ds-dark-theme]) { --wg-surface:#edf5ff; --wg-rim:rgba(70,113,201,.65); }
+body[data-whale-girl-theme][data-wg-custom] { --wg-surface:var(--dsw-alias-bg-layer-1); --wg-rim:var(--dsw-alias-border-l2); }
+[data-whale-girl-owned] { pointer-events:none; }
+body[data-whale-girl-theme] [data-wg-composer] { isolation:isolate; position:relative; overflow:visible; box-sizing:border-box; border:1px solid var(--wg-rim); border-radius:24px; corner-shape:round; background:var(--wg-surface); box-shadow:0 8px 28px rgba(32,57,115,.2); margin-top:36px; }
+/* One shared rounded geometry, not four independently stretched bitmap corners. */
+body[data-whale-girl-theme] [data-whale-girl-owned='composer-rim'] { position:absolute; z-index:1; inset:-1px; padding:2px; border-radius:24px; corner-shape:round; background:var(--wg-composer-image) center bottom / 100% 212px no-repeat,linear-gradient(135deg,#a9ceff,#576bab 18%,#e8e9ff 36%,#769edf 54%,#d9d0ff 74%,#78a5de); mask:linear-gradient(#fff 0 0) content-box,linear-gradient(#fff 0 0); mask-composite:exclude; }
+body[data-whale-girl-theme] [data-whale-girl-owned='composer-topper'] { position:absolute; z-index:1; width:min(560px,80%); height:64px; top:-54px; left:50%; transform:translateX(-50%); background:var(--wg-topper-image) center bottom / contain no-repeat; }
+body[data-whale-girl-theme] [data-wg-composer] > :not([data-whale-girl-owned]) { position:relative; z-index:2; }
+body[data-whale-girl-theme] [data-wg-settings] { isolation:isolate; box-sizing:border-box; overflow:visible; border:1px solid transparent; border-radius:32px; corner-shape:round; }
+/* Nine-slice crop axes bind the artwork's actual strokes, not its transparent canvas, to the panel. */
+body[data-whale-girl-theme] [data-whale-girl-owned='settings-frame'] { position:absolute; inset:-1px; z-index:0; border:0 solid transparent; border-image-source:var(--wg-settings-image); border-image-slice:64; border-image-width:64px; border-image-outset:33px 18px 30px 16px; border-image-repeat:stretch; }
+body[data-whale-girl-theme] [data-whale-girl-owned='settings-topper'] { position:absolute; z-index:0; top:-30px; left:50%; transform:translateX(-50%); width:min(360px,50%); height:98px; background:var(--wg-settingsTopper-image) center / contain no-repeat; }
+body[data-whale-girl-theme] [data-whale-girl-owned='settings-whale'] { position:absolute; right:18px; bottom:4px; z-index:0; width:150px; height:50px; background:var(--wg-whale-image) center / contain no-repeat; }
+body[data-whale-girl-theme] [data-wg-nav],body[data-whale-girl-theme] [data-wg-content] { position:relative; z-index:1; }
+body[data-whale-girl-theme] [data-wg-nav] { padding-top:34px; padding-bottom:32px; border-radius:32px 0 0 32px; }
+body[data-whale-girl-theme] [data-wg-nav] > :first-child { min-height:48px; padding-left:52px; background:var(--wg-brand-image) left center / 44px 44px no-repeat; }
+/* Shrink the scroll viewport itself: bottom padding alone cannot protect visible rows. */
+body[data-whale-girl-theme] [data-wg-content] { box-sizing:border-box; padding-top:24px; padding-bottom:70px; border-radius:0 32px 32px 0; }
+body[data-whale-girl-theme] [data-wg-options] { box-sizing:border-box; margin-right:24px; padding:40px 16px 24px 24px; scrollbar-gutter:stable; scrollbar-width:thin; min-height:0; }
+body[data-whale-girl-theme] [data-wg-content] > :first-child { z-index:2; }
+body[data-whale-girl-theme] [data-wg-brand] { position:relative; padding-left:56px; min-height:48px; }
+body[data-whale-girl-theme] [data-wg-brand]::before { content:''; position:absolute; left:0; top:50%; transform:translateY(-50%); width:48px; height:48px; background:var(--wg-brand-image) center / contain no-repeat; pointer-events:none; }
+body[data-whale-girl-theme] [data-wg-brand] [class$='_brandMark'] { visibility:hidden; width:0; }
+body[data-whale-girl-theme] [data-wg-hero] { background:var(--wg-brand-image) center / contain no-repeat; }
+body[data-whale-girl-theme] [data-wg-hero] > * { visibility:hidden; }
+body[data-whale-girl-theme] [data-wg-background] { isolation:isolate; }
+body[data-whale-girl-theme] [data-whale-girl-owned='background'] { position:absolute; z-index:0; inset:0; background-position:center; background-repeat:no-repeat; }
+body[data-whale-girl-theme] [data-wg-background] > :not([data-whale-girl-owned]) { position:relative; z-index:1; }
+body[data-whale-girl-theme] [data-whale-girl-controls] select,body[data-whale-girl-theme] [data-whale-girl-controls] button:not([data-whale-girl-choice]),body[data-whale-girl-theme] [data-whale-girl-controls] input::file-selector-button { font:inherit; color:var(--dsw-alias-label-primary); background:var(--dsw-alias-bg-module-platform); border:1px solid var(--dsw-alias-border-l2); border-radius:8px; padding:6px 10px; }
+body[data-whale-girl-theme] [data-whale-girl-controls] input[type='file'] { font:inherit; }
+@media (max-width:680px) {
+  body[data-whale-girl-theme] [data-wg-options] { padding:40px 12px 24px 12px; margin-right:20px; }
+  body[data-whale-girl-theme] [data-whale-girl-owned='settings-whale'] { width:120px; height:40px; }
+}
+@media (prefers-reduced-motion:reduce) { [data-whale-girl-owned] { animation:none; } }

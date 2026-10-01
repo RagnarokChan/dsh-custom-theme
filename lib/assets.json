@@ -1,0 +1,82 @@
+[
+  {
+    "file": "icon-source.png",
+    "bytes": 1779525,
+    "sha256": "2e2f3b1575c3b0906a603243e7f86adc319cb208eddd2b39ac2694a4af579723"
+  },
+  {
+    "file": "icon.icns",
+    "bytes": 2514253,
+    "sha256": "390ff563936ee170013f1688bfd8bd022f7429716572b8551ae3c9d14bc3263a"
+  },
+  {
+    "file": "icon.ico",
+    "bytes": 180677,
+    "sha256": "105e5d0a7b7be7295c1c1a0d3eefcee73212d06b12388389f72d06c275147d08"
+  },
+  {
+    "file": "icon.png",
+    "bytes": 1380162,
+    "sha256": "0c88881cfeb43bf8d6e0f6ab488e9108f6cc49d74145e8e1b6a0db2679977879"
+  },
+  {
+    "file": "whale-girl-brand-source.jpg",
+    "bytes": 217114,
+    "sha256": "27ebceefc89d36fc4ace31e38990a1e982e61f0c5b0a0ed55c86e4197fba5fd2"
+  },
+  {
+    "file": "whale-girl-brand.png",
+    "bytes": 441235,
+    "sha256": "a93b4e1acff2e38908670dbaeb98178a9c542d4257126bd18c2d6f8523d3e9c5"
+  },
+  {
+    "file": "whale-girl-composer-bow-v1.png",
+    "bytes": 1183366,
+    "sha256": "7e8d3bbaf77b7ffff280165de52bd3e00b75ca82b985a241869817658f2c41e7"
+  },
+  {
+    "file": "whale-girl-composer-frame-v1.png",
+    "bytes": 61275,
+    "sha256": "55aa89dc2c6b5640ba3ad6e57c31ce6dc9e37a0bdc2915841f9bbe3e0abc5213"
+  },
+  {
+    "file": "whale-girl-composer-frame-v2.png",
+    "bytes": 115604,
+    "sha256": "d7f4f93fea855093ebac193576b925cf4611db096b41313e5c3cbce3f9729ff3"
+  },
+  {
+    "file": "whale-girl-composer-frame-v3.png",
+    "bytes": 113466,
+    "sha256": "801b471eeda9aa328ae555fd8958ad267ec7bd5759f20acd6e0641ed944365c7"
+  },
+  {
+    "file": "whale-girl-composer-topper-v1.png",
+    "bytes": 1412344,
+    "sha256": "ca493edfc8905cad598c71a6972e88f28e42cd063517800d190c8422bea6a392"
+  },
+  {
+    "file": "whale-girl-composer-topper-v4.png",
+    "bytes": 43373,
+    "sha256": "06b0fd91a6c9d7dd20acdb9505de605b426b527eeea9ef1a6643ce8ee899327a"
+  },
+  {
+    "file": "whale-girl-composer-whale-v1.png",
+    "bytes": 1277899,
+    "sha256": "63119670f4a009db0d29d96508e0e51c5b3924633b872b676c771ba5b2d62ce7"
+  },
+  {
+    "file": "whale-girl-settings-frame-v1.png",
+    "bytes": 234617,
+    "sha256": "17f73d4320ccb76dba6f9c7d07d694219d58397a94cbde2f423102982740dc3b"
+  },
+  {
+    "file": "whale-girl-settings-frame-v2.png",
+    "bytes": 606140,
+    "sha256": "588aee3db9305d593a43522c0e531f76a6f6b7f2bd3f07b53b301b9051bd4a82"
+  },
+  {
+    "file": "whale-girl-settings-topper-v3.png",
+    "bytes": 50625,
+    "sha256": "2ae325f7f7f6931a08f6ca8fd0c8886cc8b4ca214db36683f5a1dd03c31dadcb"
+  }
+]
